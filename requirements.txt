@@ -1,0 +1,5 @@
+streamlit
+streamlit-option-menu
+# other packages you use, e.g.
+pandas
+sqlalchemy

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Learn</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      height: 100vh;
+      background: #1e1e2f;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      color: #fff;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    }
+
+    .sidebar .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #9f7aea;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #cfd2d6;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar ul li a i {
+      margin-right: 12px;
+      font-size: 18px;
+    }
+
+    .sidebar ul li a:hover {
+      background: #9f7aea;
+      color: #fff;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 260px;
+      padding: 40px;
+      flex: 1;
+    }
+
+    .main h1 {
+      color: #9f7aea;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .main p {
+      font-size: 16px;
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #9f7aea;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .footer {
+      margin-top: 30px;
+      background: #14532d;
+      color: #fff;
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="logo">📘 Smart Learn</h2>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      <li><a href="#"><i class="fas fa-user-plus"></i> Registration</a></li>
+      <li><a href="#"><i class="fas fa-users"></i> Student List</a></li>
+      <li><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+      <li><a href="#"><i class="fas fa-chalkboard"></i> Student Wall</a></li>
+      <li><a href="#"><i class="fas fa-folder"></i> My Modules</a></li>
+      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>🚀 Welcome to Smart Learn</h1>
+    <p>An interactive platform for students to <b>learn</b>, <b>share knowledge</b>, and <b>grow together</b>.</p>
+
+    <h2>✨ Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>🔑 Authentication</h3>
+        <p>Secure login & registration</p>
+      </div>
+      <div class="card">
+        <h3>👥 Student List</h3>
+        <p>See all registered students</p>
+      </div>
+      <div class="card">
+        <h3>🔍 Search</h3>
+        <p>Find blogs & students easily</p>
+      </div>
+      <div class="card">
+        <h3>👤 Profile</h3>
+        <p>View & update your profile</p>
+      </div>
+      <div class="card">
+        <h3>📝 Blog Writing</h3>
+        <p>Create, edit & delete blogs</p>
+      </div>
+      <div class="card">
+        <h3>📞 Support</h3>
+        <p>Get help when you need it</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      🎉 Thanks for being part of Smart Learn!
+    </div>
+  </div>
+
+</body>
+</html>
